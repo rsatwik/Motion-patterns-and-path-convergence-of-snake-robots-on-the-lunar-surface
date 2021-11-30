@@ -1,0 +1,3285 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='unit_box_7'>
+      <pose frame=''>-0.316695 3.57445 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone'>
+      <pose frame=''>-0.300884 6.07077 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_0'>
+      <pose frame=''>0.203098 -0.251752 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_1'>
+      <pose frame=''>-2.20149 -0.344836 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_2_clone'>
+      <pose frame=''>-2.08571 -2.6688 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_2_clone_0'>
+      <pose frame=''>0.142337 -2.72466 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_2_clone_1'>
+      <pose frame=''>-2.86667 -3.94186 0.5 -0 -0 -0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_2_clone_2'>
+      <pose frame=''>-0.310316 -3.99695 0.5 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_1_clone'>
+      <pose frame=''>-2.93047 -6.61141 0.499661 -0.000199 0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_1_clone_0'>
+      <pose frame=''>-0.354042 -6.76334 0.499661 -0.000199 0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1.00001 3.407 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1.00001 3.407 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <state world_name='default'>
+      <sim_time>2508 917000000</sim_time>
+      <real_time>0 0</real_time>
+      <wall_time>1623513177 865464338</wall_time>
+      <iterations>0</iterations>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='robot'>
+        <pose frame=''>-6.84006 1.35394 0.025956 2.90428 0.021319 -0.005797</pose>
+        <scale>1 1 1</scale>
+        <link name='SA001__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-6.87665 1.35416 0.026736 1.5655 1.33353 -1.57688</pose>
+          <velocity>0 -0.000116 5e-06 0.004612 4.2e-05 -1.9e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA002__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-6.94055 1.35422 0.026815 -1.57221 0.237305 1.55869</pose>
+          <velocity>0 -0.000117 4e-06 0.004621 2.3e-05 -2.1e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA003__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.00445 1.35497 0.026727 -1.61909 -1.33316 1.60838</pose>
+          <velocity>-1e-06 -0.000123 -3e-06 0.004635 0.000112 -5e-05</velocity>
+          <acceleration>0 0 0 0 0 -1e-06</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA004__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.06834 1.35557 0.026001 1.57081 -0.237685 -1.53329</pose>
+          <velocity>-6e-06 -8.9e-05 6e-05 0.004572 -0.000206 0.000188</velocity>
+          <acceleration>0 0 0 0 1e-06 1e-06</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA005__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.1322 1.35317 0.026 1.54791 1.333 -1.55683</pose>
+          <velocity>-3e-06 -0.000104 1.5e-05 0.004635 2.8e-05 0.000109</velocity>
+          <acceleration>0 0 0 0 -0 1e-06</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA006__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.19605 1.35086 0.026344 -1.57352 0.237822 1.5732</pose>
+          <velocity>-2e-06 -0.000128 -5e-06 0.00463 9e-06 -2.2e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA007__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.25995 1.35066 0.026175 -1.58245 -1.33292 1.58519</pose>
+          <velocity>-1e-06 -0.00013 -1.6e-05 0.004625 0.000127 -4.5e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA008__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.32385 1.35047 0.025999 1.5705 -0.237928 -1.55517</pose>
+          <velocity>3e-06 -0.000123 -5e-06 0.004623 0.000123 -3e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA009__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.38774 1.34948 0.026018 1.57024 1.33283 -1.55574</pose>
+          <velocity>1e-06 -0.000117 1.2e-05 0.004621 1.1e-05 2.1e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA010__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.45164 1.34848 0.026026 -1.57121 0.23802 1.58408</pose>
+          <velocity>1e-06 -0.00012 8e-06 0.004619 2e-06 1.6e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA011__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.51553 1.34762 0.026 -1.57079 -1.33273 1.58408</pose>
+          <velocity>3e-06 -0.000121 -4e-06 0.004661 0.000103 -7e-06</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA012__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.57942 1.34677 0.026 1.57079 -0.238112 -1.55752</pose>
+          <velocity>0 -0.000125 -6e-06 0.004617 0.000109 -3e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA013__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.64332 1.34593 0.026 1.56997 1.33264 -1.55837</pose>
+          <velocity>1e-06 -0.000123 -5e-06 0.00462 0.000129 -3.5e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA014__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.70721 1.34508 0.026012 -1.57043 0.238203 1.58477</pose>
+          <velocity>1e-06 -0.000119 -1e-06 0.004617 0.000128 -1.4e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA015__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.77111 1.34419 0.026035 -1.57319 -1.33255 1.58724</pose>
+          <velocity>-2e-06 -0.000113 2e-05 0.004604 -5.8e-05 4.4e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='SA016__MoJo__OUTPUT_BODY'>
+          <pose frame=''>-7.835 1.34329 0.025999 1.5552 -0.237795 -1.48827</pose>
+          <velocity>0 -0.00012 0 0.004613 -5.9e-05 0.000125</velocity>
+          <acceleration>0 0 0 0 -0 1e-06</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='kdl_dummy_root'>
+          <pose frame=''>-6.84006 1.35394 0.025956 2.90428 0.021319 -0.005797</pose>
+          <velocity>5e-06 -0.000124 -2.4e-05 0.004517 0.00019 -0.000156</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_2_clone'>
+        <pose frame=''>0.773861 -2.78453 0.499999 2e-06 -0 0.002425</pose>
+        <scale>1.29208 0.999292 1</scale>
+        <link name='link'>
+          <pose frame=''>0.773861 -2.78453 0.499999 2e-06 -0 0.002425</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_2_clone_0'>
+        <pose frame=''>0.58187 -4.87423 0.499999 2e-06 0 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0.58187 -4.87423 0.499999 2e-06 0 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_2_clone_1'>
+        <pose frame=''>-2.78214 -3.82284 0.499999 -0 -2e-06 1e-06</pose>
+        <scale>1 0.756541 1</scale>
+        <link name='link'>
+          <pose frame=''>-2.78214 -3.82284 0.499999 -0 -2e-06 1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_2_clone_2'>
+        <pose frame=''>1.83487 -4.87223 0.499999 2e-06 0 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>1.83487 -4.87223 0.499999 2e-06 0 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_7'>
+        <pose frame=''>3.07461 2.21068 0.5 0 0 -1e-06</pose>
+        <scale>1 0.655237 1</scale>
+        <link name='link'>
+          <pose frame=''>3.07461 2.21068 0.5 0 0 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone'>
+        <pose frame=''>-0.974845 1.0442 0.5 0 0 -1.57287</pose>
+        <scale>0.998557 0.736705 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.974845 1.0442 0.5 0 0 -1.57287</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_0'>
+        <pose frame=''>3.07079 -3.60718 0.499986 -8e-06 0 0</pose>
+        <scale>1 1.05154 1</scale>
+        <link name='link'>
+          <pose frame=''>3.07079 -3.60718 0.499986 -8e-06 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_1'>
+        <pose frame=''>-1.67953 -2.75318 0.5 0 -1e-06 -1.56737</pose>
+        <scale>1.0383 0.949105 1</scale>
+        <link name='link'>
+          <pose frame=''>-1.67953 -2.75318 0.5 0 -1e-06 -1.56737</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_1_clone'>
+        <pose frame=''>-2.78241 -6.01306 0.499995 3e-06 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-2.78241 -6.01306 0.499995 3e-06 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_1_clone_0'>
+        <pose frame=''>-0.680963 -5.96295 0.499995 3e-06 -0 0</pose>
+        <scale>0.958543 0.922729 1</scale>
+        <link name='link'>
+          <pose frame=''>-0.680963 -5.96295 0.499995 3e-06 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_clone'>
+        <pose frame=''>0.919257 -0.338446 0.499962 2e-05 -0 0</pose>
+        <scale>1 1.09874 1</scale>
+        <link name='link'>
+          <pose frame=''>0.919257 -0.338446 0.499962 2e-05 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_clone_0'>
+        <pose frame=''>3.06529 0.041972 0.499995 -3e-06 0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>3.06529 0.041972 0.499995 -3e-06 0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_clone_1'>
+        <pose frame=''>1.2032 3.17849 0.49986 -5.7e-05 -0 -1.56903</pose>
+        <scale>0.999234 1.39671 0.999982</scale>
+        <link name='link'>
+          <pose frame=''>1.2032 3.17849 0.49986 -5.7e-05 -0 -1.56903</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_8_0_clone_clone_2'>
+        <pose frame=''>-2.81109 2.08523 0.499999 0 1e-06 -0.001606</pose>
+        <scale>1 0.906229 1</scale>
+        <link name='link'>
+          <pose frame=''>-2.81109 2.08523 0.499999 0 1e-06 -0.001606</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.395506 -2.33261 21.5516 -0.20326 1.57079 2.93738</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='robot'>
+      <link name='kdl_dummy_root'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>-0.0366 0 0 0 -0 0</pose>
+          <mass>0.103</mass>
+          <inertia>
+            <ixx>3.4814e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>1.22354e-21</ixz>
+            <iyy>5.4796e-05</iyy>
+            <iyz>0</iyz>
+            <izz>5.4796e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='kdl_dummy_root_fixed_joint_lump__SA001__MoJo__INPUT_INTERFACE_collision'>
+          <pose frame=''>-0.0183 0 0 3.14159 -1.57079 3.14159</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='kdl_dummy_root_fixed_joint_lump__SA001__MoJo__INPUT_INTERFACE_visual'>
+          <pose frame=''>-0.035 0 0 3.14159 -1.57079 -1.57084</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='kdl_dummy_root_fixed_joint_lump__SA001__MoJo__INPUT_INTERFACE__COLLAR_visual_1'>
+          <pose frame=''>-0.005 0 0 3.14159 -1.57079 3.14159</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='SA001__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.0366 0 0 3.14159 -1.57079 3.14159</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA001__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA001__MoJo__OUTPUT_BODY_fixed_joint_lump__SA002__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA001__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA001__MoJo__OUTPUT_BODY_fixed_joint_lump__SA002__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA001__MoJo__OUTPUT_BODY_fixed_joint_lump__SA002__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA001__MoJo' type='revolute'>
+        <child>SA001__MoJo__OUTPUT_BODY</child>
+        <parent>kdl_dummy_root</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA002__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.1005 0 0 1.5708 -4.6e-05 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA002__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA002__MoJo__OUTPUT_BODY_fixed_joint_lump__SA003__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA002__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA002__MoJo__OUTPUT_BODY_fixed_joint_lump__SA003__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA002__MoJo__OUTPUT_BODY_fixed_joint_lump__SA003__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA002__MoJo' type='revolute'>
+        <child>SA002__MoJo__OUTPUT_BODY</child>
+        <parent>SA001__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 4.6e-05 1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA003__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.1644 0 0 1.5708 1.5707 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA003__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA003__MoJo__OUTPUT_BODY_fixed_joint_lump__SA004__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA003__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA003__MoJo__OUTPUT_BODY_fixed_joint_lump__SA004__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA003__MoJo__OUTPUT_BODY_fixed_joint_lump__SA004__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA003__MoJo' type='revolute'>
+        <child>SA003__MoJo__OUTPUT_BODY</child>
+        <parent>SA002__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -1 9.3e-05</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA004__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.2283 -0 0 -1.5708 0.000139 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA004__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA004__MoJo__OUTPUT_BODY_fixed_joint_lump__SA005__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA004__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA004__MoJo__OUTPUT_BODY_fixed_joint_lump__SA005__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA004__MoJo__OUTPUT_BODY_fixed_joint_lump__SA005__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA004__MoJo' type='revolute'>
+        <child>SA004__MoJo__OUTPUT_BODY</child>
+        <parent>SA003__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -0.000139 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA005__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.2922 -0 0 -1.5708 -1.57061 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA005__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA005__MoJo__OUTPUT_BODY_fixed_joint_lump__SA006__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA005__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA005__MoJo__OUTPUT_BODY_fixed_joint_lump__SA006__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA005__MoJo__OUTPUT_BODY_fixed_joint_lump__SA006__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA005__MoJo' type='revolute'>
+        <child>SA005__MoJo__OUTPUT_BODY</child>
+        <parent>SA004__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 1 -0.000185</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA006__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.3561 -0 0 1.5708 -0.000232 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA006__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA006__MoJo__OUTPUT_BODY_fixed_joint_lump__SA007__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA006__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA006__MoJo__OUTPUT_BODY_fixed_joint_lump__SA007__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA006__MoJo__OUTPUT_BODY_fixed_joint_lump__SA007__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA006__MoJo' type='revolute'>
+        <child>SA006__MoJo__OUTPUT_BODY</child>
+        <parent>SA005__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 0.000232 1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA007__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.42 -0 0 1.5708 1.57052 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA007__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA007__MoJo__OUTPUT_BODY_fixed_joint_lump__SA008__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA007__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA007__MoJo__OUTPUT_BODY_fixed_joint_lump__SA008__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA007__MoJo__OUTPUT_BODY_fixed_joint_lump__SA008__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA007__MoJo' type='revolute'>
+        <child>SA007__MoJo__OUTPUT_BODY</child>
+        <parent>SA006__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -1 0.000278</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA008__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.4839 -0 0 -1.5708 0.000324 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA008__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA008__MoJo__OUTPUT_BODY_fixed_joint_lump__SA009__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA008__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA008__MoJo__OUTPUT_BODY_fixed_joint_lump__SA009__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA008__MoJo__OUTPUT_BODY_fixed_joint_lump__SA009__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA008__MoJo' type='revolute'>
+        <child>SA008__MoJo__OUTPUT_BODY</child>
+        <parent>SA007__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -0.000324 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA009__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.5478 -0 0 -1.5708 -1.57043 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA009__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA009__MoJo__OUTPUT_BODY_fixed_joint_lump__SA010__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA009__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA009__MoJo__OUTPUT_BODY_fixed_joint_lump__SA010__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA009__MoJo__OUTPUT_BODY_fixed_joint_lump__SA010__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA009__MoJo' type='revolute'>
+        <child>SA009__MoJo__OUTPUT_BODY</child>
+        <parent>SA008__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 1 -0.000371</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA010__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.6117 -0 0 1.5708 -0.000417 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA010__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA010__MoJo__OUTPUT_BODY_fixed_joint_lump__SA011__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA010__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA010__MoJo__OUTPUT_BODY_fixed_joint_lump__SA011__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA010__MoJo__OUTPUT_BODY_fixed_joint_lump__SA011__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA010__MoJo' type='revolute'>
+        <child>SA010__MoJo__OUTPUT_BODY</child>
+        <parent>SA009__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 0.000417 1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA011__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.6756 -0 0 1.5708 1.57033 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA011__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA011__MoJo__OUTPUT_BODY_fixed_joint_lump__SA012__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA011__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA011__MoJo__OUTPUT_BODY_fixed_joint_lump__SA012__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA011__MoJo__OUTPUT_BODY_fixed_joint_lump__SA012__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA011__MoJo' type='revolute'>
+        <child>SA011__MoJo__OUTPUT_BODY</child>
+        <parent>SA010__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -1 0.000463</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA012__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.7395 -0 0 -1.5708 0.00051 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA012__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA012__MoJo__OUTPUT_BODY_fixed_joint_lump__SA013__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA012__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA012__MoJo__OUTPUT_BODY_fixed_joint_lump__SA013__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA012__MoJo__OUTPUT_BODY_fixed_joint_lump__SA013__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA012__MoJo' type='revolute'>
+        <child>SA012__MoJo__OUTPUT_BODY</child>
+        <parent>SA011__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -0.00051 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA013__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.8034 -0 0 -1.5708 -1.57024 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA013__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA013__MoJo__OUTPUT_BODY_fixed_joint_lump__SA014__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA013__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA013__MoJo__OUTPUT_BODY_fixed_joint_lump__SA014__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA013__MoJo__OUTPUT_BODY_fixed_joint_lump__SA014__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA013__MoJo' type='revolute'>
+        <child>SA013__MoJo__OUTPUT_BODY</child>
+        <parent>SA012__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 1 -0.000556</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA014__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.8673 -0 0 1.5708 -0.000602 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA014__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA014__MoJo__OUTPUT_BODY_fixed_joint_lump__SA015__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA014__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA014__MoJo__OUTPUT_BODY_fixed_joint_lump__SA015__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA014__MoJo__OUTPUT_BODY_fixed_joint_lump__SA015__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA014__MoJo' type='revolute'>
+        <child>SA014__MoJo__OUTPUT_BODY</child>
+        <parent>SA013__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 0.000602 1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA015__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.9312 -0 0 1.5708 1.57015 -1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0.03195 0 -0 0</pose>
+          <mass>0.206</mass>
+          <inertia>
+            <ixx>0.000319877</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.000319877</iyy>
+            <iyz>0</iyz>
+            <izz>6.9628e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA015__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='SA015__MoJo__OUTPUT_BODY_fixed_joint_lump__SA016__MoJo__INPUT_INTERFACE_collision_1'>
+          <pose frame=''>0 0 0.0456 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA015__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA015__MoJo__OUTPUT_BODY_fixed_joint_lump__SA016__MoJo__INPUT_INTERFACE_visual_1'>
+          <pose frame=''>0 0 0.0623 1.57075 -0 -1.57075</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_input.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='SA015__MoJo__OUTPUT_BODY_fixed_joint_lump__SA016__MoJo__INPUT_INTERFACE__COLLAR_visual_2'>
+          <pose frame=''>0 0 0.0323 0 0 -1.57075</pose>
+          <geometry>
+            <cylinder>
+              <length>0.01</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay/>
+        <velocity_decay/>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA015__MoJo' type='revolute'>
+        <child>SA015__MoJo__OUTPUT_BODY</child>
+        <parent>SA014__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -1 0.000649</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='SA016__MoJo__OUTPUT_BODY'>
+        <pose frame=''>-0.9951 -0 0 -1.5708 0.000695 1.5708</pose>
+        <inertial>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <mass>0.103</mass>
+          <inertia>
+            <ixx>5.4796e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>5.4796e-05</iyy>
+            <iyz>0</iyz>
+            <izz>3.4814e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='SA016__MoJo__OUTPUT_BODY_collision'>
+          <pose frame=''>0 0 0.0183 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.033</length>
+              <radius>0.026</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0.9</mu>
+                <mu2>0.9</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='SA016__MoJo__OUTPUT_BODY_visual'>
+          <pose frame=''>0 0 0 1.57075 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tarun/snake_ws/src/snake_monster/meshes/rotary_output.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <velocity_decay/>
+        <self_collide>1</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='SA016__MoJo' type='revolute'>
+        <child>SA016__MoJo__OUTPUT_BODY</child>
+        <parent>SA015__MoJo__OUTPUT_BODY</parent>
+        <axis>
+          <xyz>0 -0.000695 -1</xyz>
+          <limit>
+            <lower>-1.57</lower>
+            <upper>1.57</upper>
+            <effort>7</effort>
+            <velocity>2.20893</velocity>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0.2</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <static>0</static>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotNamespace>/snake</robotNamespace>
+      </plugin>
+      <pose frame=''>0 0 0.03 0 -0 0</pose>
+    </model>
+    <model name='unit_box_8_0_clone_clone'>
+      <pose frame=''>0.590461 -1.01295 0.499995 -3e-06 -0 -0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 0.999997</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 0.999997</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_clone_0'>
+      <pose frame=''>2.54169 -0.578308 0.499995 3e-06 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.999995 3.40701 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.999995 3.40701 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_clone_1'>
+      <pose frame=''>-2.52022 0.514083 0.499995 3e-06 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 0.999999</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 0.999999</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <model name='unit_box_8_0_clone_clone_2'>
+      <pose frame=''>-2.13392 2.53058 0.499999 0 1e-06 -1.57289</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 3.40701 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+  </world>
+</sdf>
